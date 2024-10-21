@@ -1,0 +1,46 @@
+.Checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    .iconBox {
+      border-color: var(--color-active);
+    }
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+.iconBox {
+  background-color: var(--background-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  transition-property: color, background-color, border-color;
+  transition-duration: 200ms;
+  color: transparent;
+}
+
+.hiddenInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+.hiddenInput:checked + .iconBox {
+  color: white;
+  background-color: var(--color-active);
+  border-color: var(--color-active);
+}
+
+

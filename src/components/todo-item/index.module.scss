@@ -1,0 +1,42 @@
+.TodoItem {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-primary);
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px 10px;
+
+  &:hover {
+    [data-component-name="Buttons"] {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.text {
+  width: max-content;
+}
+
+.completed {
+  .text {
+    opacity: .6;
+    text-decoration: line-through;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  transition: opacity 200ms;
+
+  opacity: 0;
+  pointer-events: none;
+
+  & > * {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
