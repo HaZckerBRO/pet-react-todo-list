@@ -1,0 +1,48 @@
+.TodoItem {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-primary);
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px 10px;
+
+  &:hover {
+    .buttons {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.TodoItem.edit {
+  .buttons {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.text {
+  width: max-content;
+}
+
+.completed {
+  opacity: .6;
+  text-decoration: line-through;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  transition: opacity 200ms;
+
+  opacity: 0;
+  pointer-events: none;
+
+  & > * {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

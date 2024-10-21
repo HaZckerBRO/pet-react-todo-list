@@ -3,6 +3,7 @@
   --color-secondary: #363636;
   --background-primary: #fff;
   --background-secondary: #e1e1e1;
+  --color-active: #00a6ff;
   --disabled: #E1E1E1B3;
   --border-color: rgba(0, 0, 0, 0.1);
 }
@@ -12,6 +13,7 @@ html[data-theme="dark"] {
   --color-secondary: #d2d2d2;
   --background-primary: #151515;
   --background-secondary: #232323;
+  --color-active: #00a6ff;
   --disabled: #232323B3;
   --border-color: rgba(255, 255, 255, 0.1);
 }

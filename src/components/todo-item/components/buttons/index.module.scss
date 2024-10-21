@@ -1,0 +1,22 @@
+.Buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 10px;
+  transition: opacity 200ms;
+
+  opacity: 0;
+  pointer-events: none;
+
+  & > * {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.Buttons.hide {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}

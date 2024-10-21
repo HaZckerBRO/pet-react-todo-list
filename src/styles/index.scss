@@ -1,4 +1,4 @@
-@import 'variables/index';
+@use 'variables/index';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -19,7 +19,7 @@
 
 body {
   color: var(--color-primary);
-  background: var(--background-primary);
+  background: var(--background-secondary);
   overflow-y: auto;
   overflow-x: hidden;
 }

@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
-const App = (): ReactNode =>  {
+const App = (): ReactNode => {
   return (
     <>
       <h1>Todos App</h1>
